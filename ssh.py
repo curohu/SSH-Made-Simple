@@ -1,7 +1,5 @@
 '''
 Created on Aug 18, 2017
-
-@author: Z231479
 '''
 import paramiko
 import subprocess
