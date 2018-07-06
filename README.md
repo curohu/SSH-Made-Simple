@@ -1,7 +1,10 @@
 # SSH-Made-Simple
-This is the easiest and most "unfriendly" ssh wrapper that I can possibly make
+This is the easiest and most "unfriendly" ssh wrapper that I cane make
 
 
-Version 1:
+Version 2:
+  I have cleaned up the module next vesion to add more comments and add documentation to readme
+  
+ 
 
-This is the first version of the module, it is heavy in dependancies and not cleaned up. These will be my goals going forward.
+
