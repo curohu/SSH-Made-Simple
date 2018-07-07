@@ -1,5 +1,5 @@
 # SSH-Made-Simple
-This is the easiest and most "unfriendly" ssh wrapper that I cane make
+This is the easiest and most "unfriendly" ssh wrapper that I can make
 
 
 Version 2:
