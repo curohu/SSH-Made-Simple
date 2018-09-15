@@ -10,6 +10,11 @@ import time
 import os
 import threading
 
+#    Abstract:
+#        This is a easy wrapper around paramiko to run arbritrary SSH commands on a device
+#        First initilize the class with the requires infromation, call the ssh.connect() function and run a command
+#
+
 class ssh:
     
     def __init__(self, ip, username, password, verbose='n'):
@@ -80,8 +85,7 @@ class ssh:
                 shell = c.invoke_shell()
                 for cmd in commands:
                     shell.send(str(cmd + '\n'))
-                    if (self.ePassword is not None) or (str(self.ePassword) not in str(cmd)):
-                        if self.verbose is 'y': print('Running: ', cmd);
+                    if self.verbose is 'y': print('Running: ', cmd);
                     while True:
                         output = str(shell.recv(9999))
                         if readyToSendFlag in output: # i am using "#" to notify the script that it is ready for more input; Change as needed
